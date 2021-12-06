@@ -1,0 +1,120 @@
+{
+    "data_set": {
+        "start_date": "20180101",
+        "end_date": "20200831",
+        "project_name": "prophet_forecast",
+        "target_file": {
+            "base_data": {
+                "Bucket": "datascience-gsitm-cjh",
+                "data_url": "data/prophet_data/preprocess.csv",
+                "encoding": "ascii"
+            },
+            "add_0": {
+                "Bucket": "datascience-gsitm-cjh",
+                "data_url": "data/prophet_data/weather.csv"
+            },
+            "add_1": {
+                "Bucket": "datascience-gsitm-cjh",
+                "data_url": "data/prophet_data/traffic.csv"
+            }
+        }
+    },
+    "output": {
+        "VT727_line_class_55-02": {
+            "add_data_0": {
+                "file": "weather.csv",
+                "encoding": "utf-8",
+                "use_columns": [
+                    "avgTa",
+                    "sumRn"
+                ],
+                "values": "108",
+                "key": "stdId",
+                "type": "int",
+                "on": "datetime"
+            },
+            "add_data_1": {
+                "file": "traffic.csv",
+                "encoding": "ascii",
+                "use_columns": [
+                    "vol"
+                ],
+                "values": "D-38",
+                "key": "spot_num",
+                "type": "str",
+                "on": "datetime"
+            }
+        },
+        "V3037_line_class_54-02": {
+            "add_data_0": {
+                "file": "weather.csv",
+                "encoding": "utf-8",
+                "use_columns": [
+                    "avgTa"
+                ],
+                "values": "108",
+                "key": "stdId",
+                "type": "int",
+                "on": "datetime"
+            }
+        },
+        "V3264_line_class_39-01": {
+            "add_data_0": {
+                "file": "weather.csv",
+                "encoding": "utf-8",
+                "use_columns": [
+                    "avgTa",
+                    "sumRn"
+                ],
+                "values": "108",
+                "key": "stdId",
+                "type": "int",
+                "on": "datetime"
+            },
+            "add_data_1": {
+                "file": "traffic.csv",
+                "encoding": "ascii",
+                "use_columns": [
+                    "vol"
+                ],
+                "values": "D-25",
+                "key": "spot_num",
+                "type": "str",
+                "on": "datetime"
+            }
+        },
+        "VE663_line_class_47-06": [],
+        "VK361_line_class_54-02": {
+            "add_data_0": {
+                "file": "weather.csv",
+                "encoding": "utf-8",
+                "use_columns": [
+                    "avgTa"
+                ],
+                "values": "108",
+                "key": "stdId",
+                "type": "int",
+                "on": "datetime"
+            }
+        },
+        "VM868_line_class_56-01": [],
+        "VI539_line_class_54-01": []
+    },
+    "output_path": {
+        "dir": "prophet-data-preprocessing",
+        "bucket": "datascience-gsitm-cjh"
+    },
+    "info": {
+        "Bucket": "datascience-gsitm-cjh",
+        "target_file": [
+            "VT727_line_class_55-02",
+            "V3037_line_class_54-02",
+            "V3264_line_class_39-01",
+            "VE663_line_class_47-06",
+            "VK361_line_class_54-02",
+            "VM868_line_class_56-01",
+            "VI539_line_class_54-01"
+        ],
+        "data_url": "data/prophet-data-preprocessing-2021-12-02/"
+    }
+}
